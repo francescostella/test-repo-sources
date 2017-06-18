@@ -7,7 +7,7 @@ dependencies:
     - npm install && npm install gulp -g
 
 compile:
-  override:
+  pre:
     - gulp build
 
 compile:
