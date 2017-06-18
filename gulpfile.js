@@ -21,7 +21,7 @@ gulp.task('build', ['prepare:dist'], function() {
 });
 
 gulp.task('build:prod', ['build'], function(cb) {
-  exec('cd dist/ && git config --global user.email "circleci@circleci.com" && git config --global user.name "CircleCI" && git add . && git commit -m "Build by CircleCI" && git push --quiet -u origin master', function (err, stdout, stderr) {
+  exec('cd dist/ && git config user.email "circleci@circleci.com" && git config user.name "CircleCI" && git add . && git commit -m "Build by CircleCI" && git push --quiet -u origin master', function (err, stdout, stderr) {
     console.log(stdout);
     console.log(stderr);
     cb(err);
