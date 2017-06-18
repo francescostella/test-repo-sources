@@ -1,0 +1,9 @@
+body {
+  background: green;
+
+  &::before {
+    content: 'SAMPLE';
+    width: 100%;
+    text-align: center;
+  }
+}
