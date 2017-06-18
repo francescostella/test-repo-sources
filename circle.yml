@@ -12,7 +12,7 @@ general:
 
 compile:
   pre:
-    - gulp build
+    - gulp build:prod
 
 # compile:
 #   post:
