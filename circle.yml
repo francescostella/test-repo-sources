@@ -9,3 +9,7 @@ dependencies:
 compile:
   override:
     - gulp build
+
+compile:
+  post:
+    - cd dist/ && git init && git add . && git commit -m "Build by CircleCI" && git remote add origin https://github.com/francescostella/test-repo-build.git && git push -u origin master
